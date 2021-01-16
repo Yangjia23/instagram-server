@@ -1,0 +1,14 @@
+{
+  "type": "mysql",
+  "host": "localhost",
+  "port": "3306",
+  "username": "yang",
+  "password": "123qwe!!!",
+  "database": "koa_instagram",
+  "synchronize": true,
+  "entities": ["src/entity/*{.ts,.js}"],
+  "charset": "utf8mb4",
+  "cli": {
+    "entitiesDir": "src/entity"
+  }
+}

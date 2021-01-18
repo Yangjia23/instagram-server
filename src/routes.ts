@@ -9,6 +9,7 @@ const unProtectedRouter = new Router({
 
 unProtectedRouter.post('/auth/login', AuthController.login)
 unProtectedRouter.post('/auth/register', AuthController.register)
+unProtectedRouter.post('/auth/validate', AuthController.validate)
 
 const protectedRouter = new Router({
   prefix: '/api'

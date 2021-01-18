@@ -1,4 +1,4 @@
-import { Entity, Column, PrimaryGeneratedColumn } from 'typeorm'
+import { Entity, Column, PrimaryGeneratedColumn, Repository } from 'typeorm'
 
 @Entity()
 export class User{
@@ -13,4 +13,11 @@ export class User{
 
   @Column()
   email: string
+}
+
+export interface IUserDocument extends Repository<User> {
+  id: number;
+  name: string,
+  password: string,
+  email: string,
 }
